@@ -1,0 +1,374 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap');
+
+:root{
+    --cor_amarela: #F7BD16;
+    --cor_amarelo-claro: #F7DA16;
+    --cor_preta: #0E1419;
+    --cor_branca: white;
+
+    --fonte_padrao: serif;
+
+    --fonte_destaque: "Oleo script swash caps", sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--fonte_padrao);
+    
+}
+header.header1{
+    background-color: var(--cor_preta);
+    padding: 10px;
+    position: relative;
+}
+
+a.sobre{
+    position: absolute;
+    font-size:1.05em;
+    text-decoration: none;
+    padding: 5px;
+    color: var(--cor_amarela);
+
+    top: 35%;
+    left: 5%;
+
+}
+
+a.sobre:hover{
+    font-size: 1em;
+    text-decoration: underline;
+}
+
+img.logo_pizza{
+    display: block;
+    margin: auto;
+
+}
+
+a.cardapio{
+    position: absolute;
+    background-color: var(--cor_amarela);
+    text-decoration: none;
+    font-size: 1.05em;
+    padding: 12px;
+    border-radius: 10px;
+    color: var(--cor_preta);
+    z-index: 1;
+
+    top: 30%;
+    right: 5%;
+}
+
+a.cardapio:hover{
+    text-decoration: underline;
+    font-size: 1.0em;
+    background-color: var(--cor_amarelo-claro);
+
+}
+
+
+header.header2{
+    position: relative;
+    min-height: 350px;
+    background-color: var(--cor_amarela);
+    padding: 10px;
+    margin-bottom: 10px;;
+
+}
+
+div.h1-header{
+    position: absolute;
+    max-width: 400px;
+    
+    left: 20%;
+    top: 10%;
+}
+
+div.h1-header > h1{
+    font-family: var(--fonte_destaque);
+    font-size: 3.5em;
+    
+}
+
+ul.informacoes{
+    position: absolute;
+    list-style-position: inside;
+    left: 20%;
+    top: 55%;
+}
+
+li.contato{
+    list-style-type: "\1F4DE\00A0\00A0";
+    margin-bottom: 10px;
+}
+li.endereco{
+    list-style-type: "\1F4CD";
+}
+
+div.triangulo{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+    border: 220px solid transparent;
+    border-bottom: 220px solid var(--cor_preta);
+    border-right: 220px solid var(--cor_preta);
+    
+    right: 0%;
+    top: -70px;
+
+    
+}
+
+div.instagram{
+    position: absolute;
+
+    top: 75%;
+    right: 75%;
+}
+
+div.twitter{
+    position: absolute;
+
+    top: 74%;
+    right: 72%;
+}
+div.facebook{
+    position: absolute;
+
+    top: 74%;
+    right: 69%;
+}
+
+div.image_destaque{
+    position: absolute;
+    max-width: 500px;
+
+    top: 4%;
+    right: 12%;
+}
+div.image_destaque> img{
+    width: 100%;
+}
+
+main{
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+}
+main article{
+    max-width: 550px;
+    margin: auto;
+    padding: 10px;
+}
+
+main h1 {
+    font-family: var(--fonte_destaque);
+    font-size: 3.5em ;
+    text-align: center;
+    line-height: 1em;
+    font-weight: normal;
+
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+main article p{
+    text-indent: 30px;
+    text-align: center;
+    text-align: justify;
+}
+
+hr{
+    margin: auto;
+    margin-top: 50px;
+    max-width: 300px;
+}
+
+div.tipo_pizza_image{
+    text-align: center;
+}
+div.tipo_pizza_image> img{
+   margin: 10px;
+
+}
+
+a.pedido{
+    display: block;
+    margin: auto;
+    margin-top: 65px;
+    width: 155px;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 1.05em;
+    background-color: var(--cor_preta);
+    color: var(--cor_amarela);
+    border-radius: 10px;
+    box-shadow: 1px 0px 5px black;
+
+    text-align: center;
+
+
+}
+
+a.pedido:hover{
+    text-decoration: underline;
+    font-size: 1.03em;
+
+}
+
+div.combo{
+    text-align: center;
+}
+div.combo > img{
+
+    margin: 10px;
+   
+}
+
+a.ver_mais{
+    display: block;
+    width: 85px;
+    padding: 15px;
+    margin: auto;
+    margin-top: 65px;
+    background-color: var(--cor_preta);
+    color: var(--cor_amarela);
+    border-radius: 10px;
+    box-shadow: 1px 0px 5px black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.05em;
+}
+
+a.ver_mais:hover{
+    text-decoration: underline;
+    font-size: 1.03em;
+
+}
+
+p.titulo_sabores{
+    text-align: center;
+    margin-top: 80px;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+div.sabores{
+    margin-top: 60px;
+}
+
+div.sabores> dl{
+    text-align: center;
+    padding: 10px;
+    columns: 2;
+}
+
+
+div.sabores> dl> dt{
+    margin-bottom: 15px;
+    font-family: var(--fonte_destaque);
+}
+
+div.sabores> dl > dd{
+    display: block;
+    margin-bottom: 60px;
+    font-family: var(--fonte_padrao);
+}
+
+a.cardapio_completo{
+    display: block;
+    max-width: 188px;
+    margin: auto;
+    margin-top: 65px;
+    background-color: var(--cor_preta);
+    color: var(--cor_amarela);
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-size:1.05em;
+}
+
+a.cardapio_completo:hover{
+    text-decoration: underline;
+    font-size: 1.03em;
+
+}
+
+aside{
+    max-width: 500px;
+    padding: 10px;
+    text-align: center;
+}
+
+footer{
+    background-color: var(--cor_preta);
+    margin-top: 80px;
+    padding: 60px;
+    color: var(--cor_amarela);
+    font-family: var(--fonte_padrao);
+
+}
+div.logo_footer{
+    display: inline-block;
+    margin: 10px;
+    margin-bottom: 30px;
+    
+}
+
+div.logo_footer> img{
+    display: block;
+}
+
+div.logo_footer> h1{
+    margin-top: 20px;
+    max-width: 250px;
+}
+
+
+
+div.contato{
+    display: inline-block;
+    list-style-position: inside;
+
+    margin: 20px;
+}
+div.contato> h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+
+
+
+li.fone{
+    list-style-type: "\1F4DE\00A0\00A0";
+}
+
+li.whatsapp{
+    list-style-type: "✆\00A0\00A0";
+}
+
+li.email{
+    list-style-type:"\2709\00A0\00A0";
+}
+
+div.redes{
+    display: inline-block;
+
+    margin: 20px;
+ 
+}
+div.redes> h1{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+div.redes> ul{
+    columns: 3;
+}
