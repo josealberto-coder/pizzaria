@@ -3,12 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap');
 
 :root{
-    --cor_amarela: #F7BD16;
+    --cor_amarelo: #F7BD16;
     --cor_amarelo-claro: #F7DA16;
     --cor_preta: #0E1419;
     --cor_branca: white;
 
-    --fonte_padrao: serif;
+    --fonte_padrao: arial, helvetica, sans-serif;
 
     --fonte_destaque: "Oleo script swash caps", sans-serif;
 }
@@ -19,145 +19,54 @@
     font-family: var(--fonte_padrao);
     
 }
+
 header.header1{
-    background-color: var(--cor_preta);
-    padding: 10px;
     position: relative;
+ 
+    background-color: var(--cor_preta);
+   
+    
 }
 
-a.sobre{
-    position: absolute;
-    font-size:1.05em;
-    text-decoration: none;
-    padding: 5px;
-    color: var(--cor_amarela);
-
-    top: 35%;
-    left: 5%;
-
+header.header1> img{
+    margin: 10px; 
+    margin-left: 15%;
 }
 
-a.sobre:hover{
-    font-size: 1em;
-    text-decoration: underline;
-}
 
-img.logo_pizza{
+a.pedir_agora{
     display: block;
-    margin: auto;
-
-}
-
-a.cardapio{
     position: absolute;
-    background-color: var(--cor_amarela);
     text-decoration: none;
-    font-size: 1.05em;
-    padding: 12px;
-    border-radius: 10px;
+    text-align: center;
     color: var(--cor_preta);
-    z-index: 1;
-
-    top: 30%;
+    font-weight: bold;
+    font-size: 1.05em;
+    background-color: var(--cor_amarelo);
+    padding:15px;
+    border-radius: 10px;
+    
+    top: 25%;
     right: 5%;
 }
 
-a.cardapio:hover{
+a.pedir_agora:hover{
     text-decoration: underline;
-    font-size: 1.0em;
-    background-color: var(--cor_amarelo-claro);
+    font-size: 1.03em;
 
 }
-
 
 header.header2{
-    position: relative;
-    min-height: 350px;
-    background-color: var(--cor_amarela);
-    padding: 10px;
-    margin-bottom: 10px;;
-
+    background-color: var(--cor_amarelo);
+    min-height: 250px;
 }
 
-div.h1-header{
-    position: absolute;
-    max-width: 400px;
-    
-    left: 20%;
-    top: 10%;
-}
-
-div.h1-header > h1{
-    font-family: var(--fonte_destaque);
-    font-size: 3.5em;
-    
-}
-
-ul.informacoes{
-    position: absolute;
-    list-style-position: inside;
-    left: 20%;
-    top: 55%;
-}
-
-li.contato{
-    list-style-type: "\1F4DE\00A0\00A0";
-    margin-bottom: 10px;
-}
-li.endereco{
-    list-style-type: "\1F4CD";
-}
-
-div.triangulo{
-    position: absolute;
-    width: 0px;
-    height: 0px;
-    background-color: transparent;
-    border: 220px solid transparent;
-    border-bottom: 220px solid var(--cor_preta);
-    border-right: 220px solid var(--cor_preta);
-    
-    right: 0%;
-    top: -70px;
-
-    
-}
-
-div.instagram{
-    position: absolute;
-
-    top: 75%;
-    right: 75%;
-}
-
-div.twitter{
-    position: absolute;
-
-    top: 74%;
-    right: 72%;
-}
-div.facebook{
-    position: absolute;
-
-    top: 74%;
-    right: 69%;
-}
-
-div.image_destaque{
-    position: absolute;
-    max-width: 500px;
-
-    top: 4%;
-    right: 12%;
-}
-div.image_destaque> img{
-    width: 100%;
-}
 
 main{
     max-width: 1000px;
     margin: auto;
     padding: 10px;
+
 }
 main article{
     max-width: 550px;
@@ -205,7 +114,7 @@ a.pedido{
     text-decoration: none;
     font-size: 1.05em;
     background-color: var(--cor_preta);
-    color: var(--cor_amarela);
+    color: var(--cor_amarelo);
     border-radius: 10px;
     box-shadow: 1px 0px 5px black;
 
@@ -236,7 +145,7 @@ a.ver_mais{
     margin: auto;
     margin-top: 65px;
     background-color: var(--cor_preta);
-    color: var(--cor_amarela);
+    color: var(--cor_amarelo);
     border-radius: 10px;
     box-shadow: 1px 0px 5px black;
     text-align: center;
@@ -285,7 +194,7 @@ a.cardapio_completo{
     margin: auto;
     margin-top: 65px;
     background-color: var(--cor_preta);
-    color: var(--cor_amarela);
+    color: var(--cor_amarelo);
     padding: 15px;
     border-radius: 10px;
     text-decoration: none;
@@ -300,8 +209,14 @@ a.cardapio_completo:hover{
 }
 
 aside{
+    display: inline-block;
     max-width: 500px;
     padding: 10px;
+    text-align: center;
+}
+
+div.mascote{
+    display: inline-block;
     text-align: center;
 }
 
@@ -309,7 +224,7 @@ footer{
     background-color: var(--cor_preta);
     margin-top: 80px;
     padding: 60px;
-    color: var(--cor_amarela);
+    color: var(--cor_amarelo);
     font-family: var(--fonte_padrao);
 
 }
@@ -330,7 +245,6 @@ div.logo_footer> h1{
 }
 
 
-
 div.contato{
     display: inline-block;
     list-style-position: inside;
@@ -342,8 +256,6 @@ div.contato> h1{
     margin-bottom: 20px;
     
 }
-
-
 
 
 li.fone{
