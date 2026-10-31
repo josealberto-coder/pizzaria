@@ -66,6 +66,7 @@ main{
     max-width: 1000px;
     margin: auto;
     padding: 10px;
+    text-align: center;
 
 }
 main article{
@@ -217,7 +218,12 @@ aside{
 
 div.mascote{
     display: inline-block;
-    text-align: center;
+    max-width: 400px;
+
+}
+
+div.mascote> img{
+    width: 100%;
 }
 
 footer{
