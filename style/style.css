@@ -4,6 +4,7 @@
 
 :root{
     --cor_amarelo: #F7BD16;
+    --cor-amarelo-medio: #D4A313;
     --cor_amarelo-claro: #F7DA16;
     --cor_preta: #0E1419;
     --cor_branca: white;
@@ -57,10 +58,57 @@ a.pedir_agora:hover{
 }
 
 header.header2{
-    background-color: var(--cor_amarelo);
-    min-height: 250px;
+    background-image: linear-gradient(to top, var(--cor-amarelo-medio), var(--cor_amarelo-claro));
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
 }
 
+div.informacao{
+    display: inline-block;
+    list-style-position: inside;
+
+    margin: auto;
+    margin-bottom: 20px;
+
+
+}
+div.informacao> h1{
+    max-width: 500px;
+    font-family: var(--fonte_destaque);
+    font-size: 3.5em;
+    line-height: 1em;
+
+    margin-bottom: 15px;
+    margin-top: 30px;
+    
+}
+
+li.telefone{
+    list-style-type: "\1F4DE\00A0";
+    margin-bottom: 10px;
+
+}
+
+li.endereco{
+    list-style-type: "\1F4CD";
+    margin-bottom: 20px;
+}
+
+ul.redes_sociais_header{
+    display: inline-block;
+    columns: 3;
+    margin-left: 40px;
+}
+
+img.imagem_destaque{
+    display: block;
+    margin: auto;
+  
+    
+}
 
 main{
     max-width: 1000px;
