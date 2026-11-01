@@ -62,7 +62,6 @@ header.header2{
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 
 }
 
@@ -166,7 +165,7 @@ a.pedido{
     background-color: var(--cor_preta);
     color: var(--cor_amarelo);
     border-radius: 10px;
-    box-shadow: 1px 0px 5px black;
+    box-shadow: 1px 0px 8px black;
 
     text-align: center;
 
@@ -217,18 +216,26 @@ p.titulo_sabores{
 }
 
 div.sabores{
+    display: inline-block;
     margin-top: 60px;
+    padding: 60px 20px 0px 30px;
+    background-color: #333333;
+    color: var(--cor_branca);
+    border-radius: 20px;
+    box-shadow: 1px 1px 8px black;
+
+
 }
 
 div.sabores> dl{
     text-align: center;
-    padding: 10px;
     columns: 2;
 }
 
 
 div.sabores> dl> dt{
     margin-bottom: 15px;
+    margin-right: 20px;
     font-family: var(--fonte_destaque);
 }
 
@@ -236,6 +243,8 @@ div.sabores> dl > dd{
     display: block;
     margin-bottom: 60px;
     font-family: var(--fonte_padrao);
+    text-align: justify
+;
 }
 
 a.cardapio_completo{
@@ -250,6 +259,7 @@ a.cardapio_completo{
     text-decoration: none;
     text-align: center;
     font-size:1.05em;
+    box-shadow: 1px 0px 8px black;
 }
 
 a.cardapio_completo:hover{
@@ -285,9 +295,7 @@ footer{
 }
 div.logo_footer{
     display: inline-block;
-    margin: 10px;
-    margin-bottom: 30px;
-    
+    margin: 20px;
 }
 
 div.logo_footer> img{
@@ -295,8 +303,9 @@ div.logo_footer> img{
 }
 
 div.logo_footer> h1{
-    margin-top: 20px;
-    max-width: 250px;
+    margin-top: 30px;
+    max-width: 300px;
+    text-align: left;
 }
 
 
@@ -307,7 +316,6 @@ div.contato{
     margin: 20px;
 }
 div.contato> h1{
-    margin-top: 20px;
     margin-bottom: 20px;
     
 }
