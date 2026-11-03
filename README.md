@@ -1,1 +1,1 @@
-<a href="https://josealberto-coder.github.io/pizzaria/" target="_blank">Acessar site</a>
+[Acessar site](https://josealberto-coder.github.io/pizzaria/)
